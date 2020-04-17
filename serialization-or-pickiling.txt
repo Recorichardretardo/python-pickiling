@@ -1,0 +1,125 @@
+Serialization and Deserialization:
+===================================
+
+Serialization:
+--------------
+
+* The process of converting an object from python supported form to either file supported form or network supported form is called Serializatin ( or Marshaling or pickiling).
+
+* Deserialization:
+------------------
+
+The process of converting an object form either file supported form or network supported form to python supported from is called Deserialization ( or Unmarshaling or unpickiling).
+
+Object Serializatin:
+====================
+
+* Object Serializatin by using Pickle
+* Object Serializatin by using JSON
+* Object Serializatin by using YAML
+
+
+Object Serializatin by using Pickle:
+====================================
+
+* we can perform serialization and deserialization of an object with respect to file by using "pickle" module.
+
+* It is python's inbuilt module.
+
+* pickle module contains dump() functon to perform Serialization( or pickiling).
+
+        pickle.dump(object, file)
+
+* pickle module contains load() function to perform Deserialization( or unpickiling).
+
+        object pickle.load(file)
+
+
+* Object Serializatin by using JSON:
+=====================================
+
+* JSON : JavaScript Object Notation
+
+* An programming language can ubderstand json.
+
+* Hence JSON is the most commanly used message format for applications irrespective of programming language and platform.
+
+* It is very helpful for interoperability between applications.
+
+* It is human readle format.
+
+* It is light weight and required less memory to store data.
+
+* pyhons json module:
+----------------------
+
+* python provides inbuilt json module.
+
+* json module defines multiple functions for serialization and deserialization.
+
+* json module contains dumps() and dump() functons to perform Serialization( or pickiling).
+
+* dumps() : It serializes python dict object to json string.
+
+* dump() : converting python dict object to json and write that json data to provide json file. It serializes to a file 
+
+
+
+* json module contains loads() and load() functions to perform Deserialization( or unpickiling).
+
+* loads() : Converting JSON string to python dict. It deserializes from json string.
+
+* load() : Reading json from a file and converting to python dict object. It deserializes from a json file.
+
+
+
+* jsonpickle module:
+====================
+
+* By using jdonpickle module we can serialize our custom class objects directly to json and we can deserialize json to our custom class objects directly.
+
+* install jsonpickle:
+
+        pip install jsonpickle
+
+* jsonpickle contains the following functions to perform serialization and deserialization.
+
+        * encode() : To convert any object to json string directly.
+
+        * decode() : To convert json string to our original object.
+
+
+* Object Serialization with YAML:
+==================================
+
+* YAML : Yaml Ain't Markup Language or Yet Another Markup Language
+
+* It is alternative to JSON.
+
+* It is also light and human understandable form.
+
+* It is more readable than JSON.
+
+* To serialize and deserialize python data to yaml, we have to go for "pyaml" library.
+
+install:
+
+        pip install pyaml
+
+* pyaml library contains yaml module.
+
+* yaml module contains dump() and load() functions to perform serialization and deserialization.
+
+dump() : To serialize python dict object to yaml string or yaml file.
+
+load() : To deserialize from yaml string or yaml file to python dict object.
+
+* Note:
+========
+
+load() is deprecated and we have to use safe_load() function.
+
+
+
+
+        
